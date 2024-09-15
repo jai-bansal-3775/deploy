@@ -1,0 +1,161 @@
+
+
+
+
+/* General container styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #0077ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search bar styling */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #003a99;
+}
+
+/* Title styling */
+.dashboard-title {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Grid container for item cards */
+.item-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-email {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto; /* This pushes the button to the right */
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+/* No items found text styling */
+.no-items {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    .search-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .card-email {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-input, .search-button {
+        width: 100%;
+        border-radius: 5px;
+    }
+}

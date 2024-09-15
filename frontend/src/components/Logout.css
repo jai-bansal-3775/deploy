@@ -1,0 +1,14 @@
+/* Styles for the logout page */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  }
+  
+  .logout-container h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  

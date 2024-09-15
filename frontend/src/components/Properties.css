@@ -1,0 +1,62 @@
+/* Styles for the properties page */
+.properties-container {
+    padding: 20px;
+    background: #f8f9fa;
+  }
+  
+  .add-property {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .add-property input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .add-property button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-property button:hover {
+    background-color: #0056b3;
+  }
+  
+  .properties-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .property-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .property-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .property-item button:hover {
+    opacity: 0.8;
+  }
+  
+  .edit-property input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
