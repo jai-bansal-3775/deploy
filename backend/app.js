@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 const itemRoutes = require('./routes/itemRoutes');
-
+const PORT = process.env.PORT
+const DB_URL = process.env.DB_URL
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -12,7 +13,7 @@ app.use(express.json());
 app.use(express.static('frontend'));
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/propertydb', {
+mongoose.connect(DB_URL, {
     // useNewUrlParser: true,
     // useUnifiedTopology: true
 });
@@ -20,6 +21,6 @@ mongoose.connect('mongodb://127.0.0.1:27017/propertydb', {
 app.use('/auth', authRoutes);
 app.use('/api', itemRoutes);
 
-app.listen(5000, () => {
-    console.log('Server is running on port 5000');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
